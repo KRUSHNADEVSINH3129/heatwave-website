@@ -1,0 +1,164 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utility */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header styles */
+.site-header {
+  background-color: #e25822;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 2em;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #ffe4cc;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.hero-text h2 {
+  margin-top: 20px;
+  font-size: 1.8em;
+  color: #c74300;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/* Info sections */
+.info-section, .tips-section, .symptoms-section, .weather-section, .contact-section {
+  padding: 40px 0;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text content block */
+.text-content {
+  max-width: 600px;
+}
+
+/* Lists */
+.symptoms-list, .tips-list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.symptoms-list li, .tips-list li {
+  margin-bottom: 10px;
+}
+
+/* Weather button */
+.weather-button {
+  display: inline-block;
+  background-color: #e25822;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.weather-button:hover {
+  background-color: #c74300;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
